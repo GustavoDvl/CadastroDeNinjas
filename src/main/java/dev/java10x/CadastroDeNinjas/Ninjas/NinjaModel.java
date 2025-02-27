@@ -20,6 +20,9 @@ public class NinjaModel {
     Long id;
     private String nome;
 
+    @Column (name = "img_url")
+    private String imgUrl;
+
     @Column(unique = true)
     private String email;
 
@@ -28,6 +31,6 @@ public class NinjaModel {
     // @ManyToOne um ninja tem uma unica missao
     @ManyToOne
     @JoinColumn(name = "Missoes_id") //Foreing Key
-    private List<MissoesModel> missoes;
+    private MissoesModel missoes;
 
 }
