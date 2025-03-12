@@ -14,3 +14,4 @@ idade INT NOT NULL,
 Missoes_id BIGINT, -- Chave estrangeira referenciando a tabela de missões
 CONSTRAINT fk_missao FOREIGN KEY (Missoes_id) REFERENCES TB_MISSOES(id) ON DELETE SET NULL
 );
+
