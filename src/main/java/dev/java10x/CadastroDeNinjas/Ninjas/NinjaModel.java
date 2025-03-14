@@ -18,6 +18,8 @@ public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
+
+    @Column(name = "nome")
     private String nome;
 
     @Column (name = "img_url")
